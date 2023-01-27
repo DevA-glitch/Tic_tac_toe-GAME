@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'East Sea Dokdo', cursive;
+    background-color: #00f3f3;
+}
+
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    margin-left: 7rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.box {
+    border: 1px solid black;
+    width: 80px;
+    height: 80px;
+    background-color: hwb(0 37% 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s;
+    color: black;
+    font-size: 2rem;
+}
+
+.box:hover {
+    background-color: hwb(64 84% 0%);
+    color: rgb(158, 158, 158);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.updates {
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgb(33, 4, 100);
+}
+
+button {
+    margin-top: 1rem;
+    padding: 5px 20px;
+    font-family: h;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border: 1ps solid white;
+    border-style: outset;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 100;
+    font-style: italic;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+button:hover {
+    color: rgb(107, 220, 255);
+    cursor: pointer;
+}
+
+.rules {
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .rules {
+        display: block;
+        background-color: white;
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    img {
+        width: 22rem;
+        height: 15rem;
+    }
+
+    .split {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 9rem;
+    }
+
+    .line {
+        border-left: 1.2px solid rgba(0, 0, 0, 0.699);
+        height: 21rem;
+    }
+    
+
+    
+}
